@@ -9,11 +9,11 @@
   ],
   "scripts": {
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
-    "test": "jest --coverage && codecov",
+    "test:coverage": "jest --coverage && codecov",
+    "test": "jest",
     "build": "tsc",
     "precommit": "jest",
-    "deploy": "npm run test:coverage && npm run build && np"
+    "deploy": "npm run build && np"
   },
   "keywords": [
     "react",
