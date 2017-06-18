@@ -6,7 +6,7 @@ module.exports = {
   moduleFileExtensions: ["ts", "tsx", "js", "json"],
   verbose: true,
   collectCoverageFrom: [
-    "src/*.{ts,tsx}",
+    "src/*.{tsx}",
     "!**/node_modules/**",
     "!**/__tests__/**"
   ]

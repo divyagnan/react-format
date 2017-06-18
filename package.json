@@ -1,7 +1,7 @@
 {
   "name": "react-format",
   "version": "1.0.0",
-  "description": "A React Component to help with the money/currency formatting",
+  "description": "A React Component to make formatting money/currency easier",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
@@ -11,7 +11,7 @@
     "test:watch": "jest --watch",
     "test": "jest --coverage && codecov",
     "build": "tsc",
-    "precommit": "npm test"
+    "precommit": "jest"
   },
   "keywords": [
     "react",
