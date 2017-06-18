@@ -1,11 +1,17 @@
 {
   "name": "react-format",
   "version": "1.0.0",
-  "description": "A set of React components that help with formatting various things",
-  "main": "index.js",
+  "description": "A React Component to help with the money/currency formatting",
+  "main": "lib/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "test": "jest",
-    "build": "tsc"
+    "test:watch": "jest --watch",
+    "test": "jest --coverage && codecov",
+    "build": "tsc",
+    "precommit": "npm test"
   },
   "keywords": [
     "react",
@@ -22,8 +28,10 @@
     "@types/jest": "^20.0.0",
     "@types/react": "^15.0.29",
     "@types/react-dom": "^15.5.0",
+    "codecov": "^2.2.0",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
+    "husky": "^0.13.4",
     "jest": "^20.0.4",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

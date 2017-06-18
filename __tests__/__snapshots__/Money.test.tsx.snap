@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Money Formatter accepts a both a locale prop and a currency prop 1`] = `
+<Component
+  currency="JPY"
+  locale="ja-JP"
+>
+  <span>
+    ￥3,400
+  </span>
+</Component>
+`;
+
+exports[`Money Formatter accepts a currency prop 1`] = `
+<Component
+  currency="EUR"
+  locale="en-US"
+>
+  <span>
+    €3,400.00
+  </span>
+</Component>
+`;
+
+exports[`Money Formatter accepts a locale prop 1`] = `
+<Component
+  currency="USD"
+  locale="en-IN"
+>
+  <span>
+    US$ 3,400.00
+  </span>
+</Component>
+`;
+
+exports[`Money Formatter does basic formatting - without config 1`] = `
+<Component
+  currency="USD"
+  locale="en-US"
+>
+  <span>
+    $3,400.00
+  </span>
+</Component>
+`;
