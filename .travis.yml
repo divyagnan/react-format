@@ -11,7 +11,7 @@ node_js:
 before_script:
   - npm prune
 script:
-  - npm test:coverage
+  - npm run test:coverage
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
