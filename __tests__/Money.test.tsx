@@ -11,7 +11,7 @@ describe("Money Formatter", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
   it("accepts a locale prop", () => {
-    const wrapper = mount(<Money locale="en-IN">3400</Money>);
+    const wrapper = mount(<Money locale="de-DE">3400</Money>);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
   it("accepts a currency prop", () => {
@@ -19,7 +19,7 @@ describe("Money Formatter", () => {
     expect(toJson(wrapper)).toMatchSnapshot();
   });
   it("accepts a both a locale prop and a currency prop", () => {
-    const wrapper = mount(<Money locale="ja-JP" currency="JPY">3400</Money>);
+    const wrapper = mount(<Money locale="de-DE" currency="EUR">3400</Money>);
     expect(toJson(wrapper)).toMatchSnapshot();
   });
 });

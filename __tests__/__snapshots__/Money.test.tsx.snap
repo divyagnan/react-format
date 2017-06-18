@@ -2,11 +2,11 @@
 
 exports[`Money Formatter accepts a both a locale prop and a currency prop 1`] = `
 <Component
-  currency="JPY"
-  locale="ja-JP"
+  currency="EUR"
+  locale="de-DE"
 >
   <span>
-    ￥3,400
+    3.400,00 €
   </span>
 </Component>
 `;
@@ -25,10 +25,10 @@ exports[`Money Formatter accepts a currency prop 1`] = `
 exports[`Money Formatter accepts a locale prop 1`] = `
 <Component
   currency="USD"
-  locale="en-IN"
+  locale="de-DE"
 >
   <span>
-    US$ 3,400.00
+    3.400,00 $
   </span>
 </Component>
 `;
