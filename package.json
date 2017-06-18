@@ -1,6 +1,6 @@
 {
   "name": "react-format",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A React Component to make formatting money/currency easier",
   "main": "lib/index.js",
   "types": "./lib/index.d.ts",
