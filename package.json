@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "test": "jest --coverage && codecov",
     "build": "tsc",
     "precommit": "jest"
