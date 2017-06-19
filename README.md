@@ -1,4 +1,4 @@
-# React Format
+# React Format [![codecov](https://codecov.io/gh/divyagnan/react-format/branch/master/graph/badge.svg)](https://codecov.io/gh/divyagnan/react-format)
 > A React Component to make formatting money/currency easier
 
 ### Installation
