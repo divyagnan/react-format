@@ -7,7 +7,7 @@
 
 ### Usage
 
-```js
+```jsx
 // First import the Money component
 import { Money } from 'react-format';
 
@@ -17,7 +17,7 @@ import { Money } from 'react-format';
 ```
 
 ### API
-```js
+```jsx
 <Money
   /*
    * This is an optional string with the code for the locale.
