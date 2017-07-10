@@ -8,7 +8,7 @@
 ### Usage
 
 ```jsx
-// First import the Money component
+// First import an available formatting component
 import { Money } from 'react-format';
 
 // Then use it
@@ -17,6 +17,11 @@ import { Money } from 'react-format';
 ```
 
 ### API
+#### Available Formatting Components
+* [Money](#money)
+* [Date](#date)
+
+##### Money
 ```jsx
 <Money
   /*
@@ -30,6 +35,23 @@ import { Money } from 'react-format';
    */
   currency="USD"
 >
-{/* The child should be the number you want formatted*/}
+{/* The child should be the number you want formatted */}
 </Money>
+```
+##### Date
+```jsx
+<Date
+  /*
+   * This is an optional string with the code for the locale.
+   * This defaults to "en-US"
+   */
+  locale="en-US"
+  /*
+   * This is an optional object with options that you can pass in.
+   * This defaults to an empty object.
+   */
+  options={}
+>
+  {/* The child should be the date you want formatted */}
+</Date>
 ```

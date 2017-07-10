@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Date Formatter does basic formatting - without config 1`] = `
+<Component
+  locale="en-US"
+  options={Object {}}
+>
+  <span>
+    12/19/2012
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter is responsive to locale changes 1`] = `
+<Component
+  locale="de-DE"
+  options={Object {}}
+>
+  <span>
+    19.12.2012
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter takes and applies an options prop 1`] = `
+<Component
+  locale="en-US"
+  options={
+    Object {
+      "day": "2-digit",
+      "era": "long",
+      "hour": "2-digit",
+      "minute": "2-digit",
+      "month": "long",
+      "second": "2-digit",
+      "timeZone": "America/New_York",
+      "timeZoneName": "long",
+      "weekday": "long",
+      "year": "2-digit",
+    }
+  }
+>
+  <span>
+    Wednesday, December 19, 12 Anno Domini, 10:00:00 PM Eastern Standard Time
+  </span>
+</Component>
+`;
