@@ -2,15 +2,24 @@ import * as React from "react";
 import { mount } from "enzyme";
 import toJson from "enzyme-to-json";
 
-import { Date as DateComponent } from "../src/Date";
+import { DateFormatter as DateComponent } from "../src/Date";
 
 const date = new Date(Date.UTC(2012, 11, 20, 3, 0, 0));
+const dateString = "2015-03-25T12:00:00Z";
 
 describe("Date Formatter", () => {
-  it("does basic formatting - without config", () => {
+  it("does basic formatting of a date- without config", () => {
     const wrapper = mount(
       <DateComponent>
         {date}
+      </DateComponent>
+    );
+    expect(toJson(wrapper)).toMatchSnapshot();
+  });
+  it("does basic formatting of a date string- without config", () => {
+    const wrapper = mount(
+      <DateComponent>
+        {dateString}
       </DateComponent>
     );
     expect(toJson(wrapper)).toMatchSnapshot();

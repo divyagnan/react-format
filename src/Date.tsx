@@ -20,12 +20,14 @@ export interface IDateProps {
   children: any;
 }
 
-export const Date: React.SFC<IDateProps> = (props): JSX.Element =>
+export const DateFormatter: React.SFC<IDateProps> = (props): JSX.Element =>
   <span>
-    {Intl.DateTimeFormat(props.locale, props.options).format(props.children)}
+    {Intl.DateTimeFormat(props.locale, props.options).format(
+      Date.parse(props.children)
+    )}
   </span>;
 
-Date.defaultProps = {
+DateFormatter.defaultProps = {
   locale: "en-US",
   options: {}
 };

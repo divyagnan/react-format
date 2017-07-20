@@ -1,2 +1,2 @@
 export * from "./Money";
-export * from "./Date";
+export { DateFormatter as Date, IDateProps } from "./Date";

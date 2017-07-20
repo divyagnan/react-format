@@ -1,6 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Date Formatter does basic formatting - without config 1`] = `
+exports[`Date Formatter does basic formatting of a date string- without config 1`] = `
+<Component
+  locale="en-US"
+  options={Object {}}
+>
+  <span>
+    3/25/2015
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter does basic formatting of a date- without config 1`] = `
 <Component
   locale="en-US"
   options={Object {}}
