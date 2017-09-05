@@ -14,7 +14,11 @@ cases(
   "Date Formatter",
   opts => {
     const wrapper = mount(
-      <DateComponent locale={opts.locale} options={opts.options}>
+      <DateComponent
+        locale={opts.locale}
+        options={opts.options}
+        passthrough={opts.passthrough}
+      >
         {opts.date}
       </DateComponent>
     );
@@ -63,6 +67,11 @@ cases(
         second: "2-digit",
         timeZoneName: "long"
       }
+    },
+    {
+      name: "passthrough works",
+      date: "badDate",
+      passthrough: true
     }
   ]
 );

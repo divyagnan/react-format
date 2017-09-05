@@ -18,6 +18,7 @@ export interface IDateProps {
     timeZoneName?: "short" | "long";
   };
   children: any;
+  passthrough?: boolean;
 }
 
 const validDate = (potentialDate: any): boolean =>
@@ -29,10 +30,17 @@ const formatDate = (props: IDateProps): string =>
   );
 
 export const DateFormatter: React.SFC<IDateProps> = (props): JSX.Element => (
-  <span>{validDate(props.children) && formatDate(props)}</span>
+  <span>
+    {validDate(props.children) ? (
+      formatDate(props)
+    ) : (
+      props.passthrough && props.children
+    )}
+  </span>
 );
 
 DateFormatter.defaultProps = {
   locale: "en-US",
-  options: {}
+  options: {},
+  passthrough: false
 };

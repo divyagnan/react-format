@@ -4,6 +4,7 @@ exports[`Date Formatter Bad Date passed in 1`] = `
 <Component
   locale="en-US"
   options={Object {}}
+  passthrough={false}
 >
   <span />
 </Component>
@@ -13,6 +14,7 @@ exports[`Date Formatter does basic formatting of a date string- without config 1
 <Component
   locale="en-US"
   options={Object {}}
+  passthrough={false}
 >
   <span>
     3/25/2015
@@ -24,6 +26,7 @@ exports[`Date Formatter does basic formatting of a date- without config 1`] = `
 <Component
   locale="en-US"
   options={Object {}}
+  passthrough={false}
 >
   <span>
     12/19/2012
@@ -39,6 +42,7 @@ exports[`Date Formatter does basic formatting of a zero date string with UTC opt
       "timeZone": "UTC",
     }
   }
+  passthrough={false}
 >
   <span>
     3/1/2015
@@ -50,6 +54,7 @@ exports[`Date Formatter does basic formatting of a zero date string without UTC 
 <Component
   locale="en-US"
   options={Object {}}
+  passthrough={false}
 >
   <span>
     2/28/2015
@@ -61,9 +66,22 @@ exports[`Date Formatter is responsive to locale changes 1`] = `
 <Component
   locale="de-DE"
   options={Object {}}
+  passthrough={false}
 >
   <span>
     19.12.2012
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter passthrough works 1`] = `
+<Component
+  locale="en-US"
+  options={Object {}}
+  passthrough={true}
+>
+  <span>
+    badDate
   </span>
 </Component>
 `;
@@ -85,6 +103,7 @@ exports[`Date Formatter takes and applies an options prop 1`] = `
       "year": "2-digit",
     }
   }
+  passthrough={false}
 >
   <span>
     Wednesday, December 19, 12 Anno Domini, 10:00:00 PM Eastern Standard Time
