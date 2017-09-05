@@ -1,5 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Date Formatter Bad Date passed in 1`] = `
+<Component
+  locale="en-US"
+  options={Object {}}
+>
+  <span />
+</Component>
+`;
+
 exports[`Date Formatter does basic formatting of a date string- without config 1`] = `
 <Component
   locale="en-US"
@@ -18,6 +27,32 @@ exports[`Date Formatter does basic formatting of a date- without config 1`] = `
 >
   <span>
     12/19/2012
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter does basic formatting of a zero date string with UTC option 1`] = `
+<Component
+  locale="en-US"
+  options={
+    Object {
+      "timeZone": "UTC",
+    }
+  }
+>
+  <span>
+    3/1/2015
+  </span>
+</Component>
+`;
+
+exports[`Date Formatter does basic formatting of a zero date string without UTC option 1`] = `
+<Component
+  locale="en-US"
+  options={Object {}}
+>
+  <span>
+    2/28/2015
   </span>
 </Component>
 `;

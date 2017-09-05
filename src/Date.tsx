@@ -20,12 +20,17 @@ export interface IDateProps {
   children: any;
 }
 
-export const DateFormatter: React.SFC<IDateProps> = (props): JSX.Element =>
-  <span>
-    {Intl.DateTimeFormat(props.locale, props.options).format(
-      Date.parse(props.children)
-    )}
-  </span>;
+const validDate = (potentialDate: any): boolean =>
+  potentialDate instanceof Date || !!Date.parse(potentialDate);
+
+const formatDate = (props: IDateProps): string =>
+  Intl.DateTimeFormat(props.locale, props.options).format(
+    Date.parse(props.children)
+  );
+
+export const DateFormatter: React.SFC<IDateProps> = (props): JSX.Element => (
+  <span>{validDate(props.children) && formatDate(props)}</span>
+);
 
 DateFormatter.defaultProps = {
   locale: "en-US",
